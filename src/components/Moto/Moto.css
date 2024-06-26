@@ -1,0 +1,28 @@
+.moto-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: auto;
+    text-align: center;
+    background-color: rgb(37, 36, 36); 
+    color: beige;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.3) 5%, transparent 5%);
+    background-size: 30px 30px;
+}
+h2{
+    color:rgb(233, 58, 58);
+    margin-top: 30px;
+    font-weight: 600;
+}
+h5{
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+p{
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    color: rgb(151, 144, 144);
+}

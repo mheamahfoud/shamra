@@ -1,0 +1,40 @@
+.aboutus-header {
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    margin-top: -300px;
+    padding: 20px;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.col-md-6 {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.aboutus-image {
+    width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: 0; 
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}

@@ -1,0 +1,62 @@
+
+.bg-body-tertiary{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99;
+    margin-top: 15px;
+    animation: 0.5s ease-in 0s 1 easeIn;
+    transition: all 0.7s linear;
+    -webkit-transition: all 0.7s linear;
+    -moz-transition: all 0.7s linear;
+    -ms-transition: all 0.7s linear;
+    -o-transition: all 0.7s linear;
+    -webkit-animation: 0.5s ease-in 0s 1 easeIn;
+
+}
+.Container{
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+.navbar-logo {
+height: 100px;
+width: 100px;
+display: inline-block;
+padding-top: .3125rem;
+padding-bottom: .3125rem;
+margin-right: 1rem;
+font-size: 1.25rem;
+line-height: inherit;
+white-space: nowrap;
+}
+
+button {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #000;
+    margin-left: 15px;
+    margin-top:5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
+.basic-navbar-nav{
+flex-grow: 1;
+align-items: center;
+}
+
+@media (min-width: 992px) {
+
+    .bg-body-tertiary{
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    }
+
+}
