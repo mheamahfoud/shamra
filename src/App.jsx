@@ -8,6 +8,7 @@ import Services from './components/Services/Services';
 import Features from './components/Features/Features';
 import ContactInfo from './components/ContactInfo/ContactInfo';
 import Footer from './components/Footer/Footer';
+import { I18nProvider } from './i18n/i18nProvider';
 
 
 
@@ -15,7 +16,7 @@ import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
-    <div>
+    <I18nProvider>
       <NavBar />
       <section id="home">
         <Slidar />
@@ -40,7 +41,7 @@ const App = () => {
 
       <Footer />
 
-    </div>
+    </I18nProvider>
   );
 }
 

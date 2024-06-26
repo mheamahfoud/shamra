@@ -1,9 +1,11 @@
-import React from 'react';
-import { Navbar, Container, Nav } from 'react-bootstrap';
-import './NavBar.css';
-import defaultLogo from '../../assets/new logo shamra.png';
+import React from "react";
+import { Navbar, Container, Nav } from "react-bootstrap";
+import "./NavBar.css";
+import defaultLogo from "../../assets/new logo shamra.png";
+import { setLanguage, useLang } from "../../i18n/Layout18n";
 
 const NavBar = () => {
+  const lang = useLang();
   return (
     <>
       <Navbar expand="lg" className="bg-body-tertiary">
@@ -19,14 +21,28 @@ const NavBar = () => {
               <Nav.Link href="#services">SERVICES</Nav.Link>
               <Nav.Link href="#locations">LOCATIONS</Nav.Link>
               <Nav.Link href="#contact">CONTACT INFO</Nav.Link>
-              <button >ع</button>
-              <button >En</button>
+              <button
+                style={{ background: lang == "ar" ? "red" : "" }}
+                onClick={() => {
+                  setLanguage("ar");
+                }}
+              >
+                ع
+              </button>
+              <button
+              style={{ background: lang == "en" ? "red" : "" }}
+                onClick={() => {
+                  setLanguage("en");
+                }}
+              >
+                En
+              </button>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
     </>
   );
-}
+};
 
 export default NavBar;
